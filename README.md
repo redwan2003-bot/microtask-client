@@ -3,6 +3,7 @@
 A full-stack micro-tasking platform where workers complete small tasks to earn rewards, buyers create and manage tasks, and admins oversee platform operations.
 
 🔗 **Live Site**: [https://micro-task-platform.web.app](https://micro-task-platform.web.app)
+🔗 **Server API**: [https://microtask-server-90z4.onrender.com/](https://microtask-server-90z4.onrender.com/)
 
 ## Admin Credentials
 - **Email**: admin@microtask.com

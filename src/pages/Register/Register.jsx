@@ -43,7 +43,7 @@ const Register = () => {
                     createdAt: new Date()
                 };
 
-                const dbRes = await axios.post('http://localhost:5000/users', userInfo);
+                const dbRes = await axios.post(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/users`, userInfo);
                 if (dbRes.data.insertedId) {
                     reset();
                     navigate('/');

@@ -41,7 +41,7 @@ const Login = () => {
                     coins: 10,
                     createdAt: new Date()
                 };
-                await axios.post('http://localhost:5000/users', userInfo);
+                await axios.post(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/users`, userInfo);
                 navigate(from, { replace: true });
             })
             .catch(error => {

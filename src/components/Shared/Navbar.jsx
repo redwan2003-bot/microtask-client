@@ -13,9 +13,9 @@ const Navbar = () => {
 
     useEffect(() => {
         if (user?.email) {
-            axios.get(`http://localhost:5000/users/role/${user.email}`)
+            axios.get(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/users/role/${user.email}`)
                 .then(res => setCoins(res.data.coins || 0));
-            axios.get(`http://localhost:5000/notifications/${user.email}`, { withCredentials: true })
+            axios.get(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/notifications/${user.email}`, { withCredentials: true })
                 .then(res => setNotifications(res.data || []))
                 .catch(() => { });
         }

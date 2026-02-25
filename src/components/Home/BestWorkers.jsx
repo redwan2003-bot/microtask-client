@@ -16,7 +16,7 @@ const BestWorkers = () => {
 
     useEffect(() => {
         setLoading(true);
-        axios.get('http://localhost:5000/best-workers')
+        axios.get(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/best-workers`)
             .then(res => {
                 if (res.data && res.data.length > 0) {
                     setWorkers(res.data);
