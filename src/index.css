@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #570df8;
+  --secondary: #f000b8;
+  --accent: #37cdbe;
+  --neutral: #3d4451;
+  --base-100: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+}
+
+.active {
+  @apply bg-primary text-white rounded-lg;
+}
+
+.menu li a:hover {
+  @apply bg-primary/10 text-primary;
+}
